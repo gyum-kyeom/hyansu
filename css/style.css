@@ -1,0 +1,602 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+}
+
+header {
+    background-image: url(../img/mainvisual_pc.jpeg);
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    vertical-align: bottom;
+    position: relative;
+}
+
+header .wrapper {
+    /* height: 80px; */
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo {
+    font-size: 48px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    /* font-weight:100; */
+}
+
+nav ul {
+    display: flex;
+    line-height: 56px;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+header .other {
+    display: none;
+}
+
+h1 {
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    top: 45%;
+    left: 250px;
+}
+
+
+/* main */
+#to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #94BD9C;
+    text-decoration: none;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    border-radius: 90px;
+    opacity: 1;
+    outline: 1px solid white;
+    z-index: 2;
+}
+
+/* position:absolute;にて位置調整完了！！！！ */
+#to-top::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+    border-width: 0px 7.5px 9px 7.5px;
+}
+
+
+/* .news */
+section {
+    margin: 120px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 900px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-item {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.news-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.news-item a:hover {
+    opacity: 0.6;
+}
+
+.topic1,
+.topic2,
+.topic3 {
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    column-gap: 20px;
+}
+
+.data {
+    display: flex;
+    width: 50%;
+}
+
+.topic-text {
+    width: 60%;
+}
+
+.news-category {
+    margin-left: 20px;
+}
+
+
+/* category */
+.category-item {
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.round {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.category-item a {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.category-item a:hover {
+    opacity: 0.7;
+}
+
+.category-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.category-item p {
+    display: inline-block;
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-shadow: 0 4px 4px black;
+}
+
+.woody img {
+    opacity: 80%;
+}
+
+
+/* .products */
+.products-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    /* row-gap: 32px; */
+}
+
+.products-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.products-item a:hover {
+    opacity: 0.6;
+}
+
+.item {
+    width: 100%;
+    height: 340px;
+}
+
+.neroli,
+.tuberose,
+.bergamot,
+.iris {
+    margin-bottom: 32px;
+}
+
+.item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.item p {
+    margin-left: 10px;
+}
+
+
+/* .access */
+.access .container {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    width: 240px;
+    /* margin-right: 30px; */
+}
+
+.info p {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+iframe {
+    max-width: 550px;
+    width: 100%;
+    height: 350px;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #94BD9C;
+    padding-bottom: 30px;
+}
+
+footer .wrapper {
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 50px;
+    /* margin: 70px 70px 50px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.space {
+    margin-bottom: 30px;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer ul a:hover {
+    opacity: 0.7;
+}
+
+footer p {
+    font-size: 64px;
+    text-align: center;
+    color: white;
+}
+
+
+/* 以下、レスポンシブ */
+@media (max-width:599px) {
+    header {
+        background-image: url(../img/mainvisual_sp.jpeg);
+        position: relative;
+    }
+
+    .brand-logo {
+        position: absolute;
+        z-index: 12;
+    }
+
+    .open .brand-logo {
+        position: fixed;
+    }
+
+    h1 {
+        position: absolute;
+        font-size: 80px;
+        color: white;
+        top: 45%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .hamburger {
+        width: 65px;
+        height: 65px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 1s;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .open .hamburger {
+        position: fixed;
+    }
+
+    /* ハンバーガーメニューの線の設定（メニューが閉じている時）*/
+    .hamburger span {
+        /* span：インライン要素→ブロック要素に変化 */
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: white;
+        transition: all 0.4s;
+        position: absolute;
+    }
+
+    /* 1本目の線の位置 */
+    .hamburger span:nth-child(1) {
+        top: 35%;
+        left: 10px;
+    }
+
+    /* 2本目の線の位置 */
+    .hamburger span:nth-child(2) {
+        top: 50%;
+        left: 10px;
+    }
+
+    /* 3本目の線の位置 */
+    .hamburger span:nth-child(3) {
+        top: 65%;
+        left: 10px;
+    }
+
+
+    /* ハンバーガーメニューの詳細な動き 未調整 */
+    /* 1本目の線を-45度回転
+  transformで線のど真ん中の点を中心に動く */
+    .open .hamburger span:nth-child(1) {
+        top: 50%;
+        transform: rotate(-45deg);
+        background-color: white;
+
+    }
+
+    /* 2本目の線は45度回転 */
+    .open .hamburger span:nth-child(2) {
+        transform: rotate(45deg);
+        transition: all 0.4s;
+        background-color: white;
+    }
+
+    /* 3本目の線を45度回転
+  transformで線のど真ん中の点を中心に動く */
+    .open .hamburger span:nth-child(3) {
+        top: 50%;
+        transform: rotate(45deg);
+        background-color: white;
+    }
+
+
+    nav {
+        visibility: hidden;
+        position: fixed;
+        background-color: #94BD9C;
+        width: 40vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 1s;
+        z-index: 11;
+    }
+
+    .open nav {
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s;
+        z-index: 10;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    header .other {
+        visibility: hidden;
+        position: fixed;
+        top: 400px;
+        left: 20px;
+        opacity: 0;
+        transition: all 1s;
+        z-index: 11;
+    }
+
+    .other li {
+        list-style: none;
+    }
+
+    .other a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    .open .other {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s;
+        z-index: 10;
+    }
+
+    .mask {
+        display: none;
+        z-index: 9;
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    .open .mask {
+        display: block;
+        position: fixed;
+        background-color: white;
+        opacity: 0.4;
+        top: 0;
+        right: 0;
+        transition: all 1s;
+        width: 60vw;
+        height: 100vh;
+    }
+
+
+    /* .main */
+    section {
+        margin: 80px 0;
+    }
+
+    /* .news */
+    .news .wrapper {
+        max-width: 380px;
+    }
+
+    .topic1,
+    .topic2,
+    .topic3 {
+        flex-direction: column;
+    }
+
+    .data {
+        width: 100%;
+    }
+
+    .topic-text {
+        width: 100%;
+    }
+
+    /* .category */
+    .category-item {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .round {
+        width: 100%;
+        height: 180px;
+        position: relative;
+    }
+
+    .category-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .category-item p {
+        display: inline-block;
+        text-align: center;
+        font-size: 64px;
+        color: white;
+        position: absolute;
+        top: 32%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-shadow: 0 4px 4px black;
+    }
+
+    /* .products */
+    .products-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    .mimosa,
+    .sandalwood {
+        margin-bottom: 32px;
+    }
+
+    /* .access */
+    .access .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        margin-top: 30px;
+        /* text-align: center; */
+    }
+
+    .info p {
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    /* footer */
+    footer .wrapper {
+        margin: 0 auto;
+        max-width: 650px;
+        padding: 50px 70px;
+        /* margin: 70px 70px 50px; */
+        display: flex;
+        justify-content: space-between;
+    }
+}
